@@ -8,7 +8,7 @@ Base de conhecimento com guias de resolução de incidentes comuns de suporte N�
 - [Diagnóstico de rede sem acesso à internet](diagnostico-rede.md)
 - [Identificando e-mails de phishing](phishing-boas-praticas.md)
 
-Cada guia segue a mesma estrutura: sintoma relatado, diagnóstico, procedimento passo a passo e critério de quando escalar para Nível 2 — o mesmo formato usado em bases de conhecimento profissionais (ex: Confluence, ServiceNow KB).
+Cada guia segue a mesma estrutura: sintoma relatado, diagnóstico, procedimento passo a passo e critério de quando escalar para Nível 2. O mesmo formato usado em bases de conhecimento profissionais (ex: Confluence, ServiceNow KB).
 
 ## Como usar este repositório
 
