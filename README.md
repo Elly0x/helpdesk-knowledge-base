@@ -1,21 +1,40 @@
-# Knowledge Base — Help Desk
+# Laboratório Virtual de Suporte & Active Directory
 
-Base de conhecimento com guias de resolução de incidentes comuns de suporte Nível 1, no formato usado em times reais de TI para documentar procedimentos.
+> **Status:** projeto em andamento
 
-## Guias
+Simulação de um ambiente corporativo de infraestrutura Windows, reproduzindo tarefas reais de um analista de suporte/TI: administração de domínio, gestão de usuários e aplicação de políticas de grupo.
 
-- [Redefinir senha e desbloquear conta no AD](reset-senha-ad.md)
-- [Diagnóstico de rede sem acesso à internet](diagnostico-rede.md)
-- [Identificando e-mails de phishing](phishing-boas-praticas.md)
+## Objetivo
 
-Cada guia segue a mesma estrutura: sintoma relatado, diagnóstico, procedimento passo a passo e critério de quando escalar para Nível 2. O mesmo formato usado em bases de conhecimento profissionais (ex: Confluence, ServiceNow KB).
+Demonstrar, na prática, competências essenciais de suporte técnico Nível 1/2 em ambiente de domínio Windows:
+- Instalação e configuração de um Domain Controller (Active Directory Domain Services)
+- Organização de usuários por Unidades Organizacionais (OUs)
+- Ingresso de máquinas cliente no domínio
+- Criação e aplicação de Group Policy Objects (GPOs)
 
-## Como usar este repositório
+## Ambiente
 
-1. Suba os arquivos `.md` para um repositório no GitHub.
-2. Ative o GitHub Pages para publicar o `index.html` como página de navegação da base de conhecimento.
-3. Adicione o link ao portfólio.
+| Item | Detalhe |
+|---|---|
+| Virtualização | Oracle VirtualBox |
+| Servidor | Windows Server 2022 (Evaluation) — Domain Controller |
+| Cliente | Windows 10/11, ingressado no domínio |
+| Domínio | `empresa.local` |
 
-## Por que este projeto
+## Estrutura implementada
 
-Documentar procedimentos de forma clara é parte central do trabalho de suporte (tanto para resolver mais rápido quanto para treinar outros técnicos). Este repositório demonstra essa habilidade na prática.
+- **OUs:** Financeiro, TI, Atendimento
+- **Usuários de teste** criados em cada OU
+- **GPO aplicada:** restrição de acesso ao Painel de Controle na OU Atendimento
+
+## Documentação técnica
+
+O passo a passo completo da configuração está em [GUIA-EXECUCAO.md](GUIA-EXECUCAO.md).
+
+## Evidências
+
+_(prints da configuração serão adicionados na pasta `prints/` conforme o ambiente for montado)_
+
+## Aprendizados
+
+_(a preencher ao final, com os principais desafios encontrados durante a configuração)_
